@@ -24,7 +24,7 @@ curl http://todoapp-clusterip.todoapp.svc.cluster.local:80
 # Test `todoapp` using port forward
 
 ```
-kubectl port-forward service/todoapp-service 8080:80
+kubectl port-forward service/todoapp-clusterip 8080:80
 curl http://localhost:8080
 ```
 
